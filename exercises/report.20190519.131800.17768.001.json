@@ -1,0 +1,298 @@
+
+{
+  "header": {
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "location": "OnFatalError",
+    "filename": "report.20190519.131800.17768.001.json",
+    "dumpEventTime": "2019-05-19T13:18:00Z",
+    "processId": 17768,
+    "commandLine": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\hitvardhan.solanki\\AppData\\Roaming\\npm\\node_modules\\jest\\node_modules\\jest-worker\\build\\workers\\processChild.js"
+    ],
+    "nodejsVersion": "v11.10.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "11.10.0",
+      "v8": "7.0.276.38-node.17",
+      "uv": "1.26.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "67",
+      "nghttp2": "1.34.0",
+      "napi": "4",
+      "llhttp": "1.1.1",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1a",
+      "cldr": "34.0",
+      "icu": "63.1",
+      "tz": "2018e",
+      "unicode": "11.0"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v11.10.0/node-v11.10.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v11.10.0/node-v11.10.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v11.10.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.16299",
+    "osVersion": "Windows 10 Enterprise",
+    "osMachine": "x86_64",
+    "host": "IN2319201W6"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff77cebdd6e",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+9902"
+    },
+    {
+      "pc": "0x00007ff77cebcc36",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+5494"
+    },
+    {
+      "pc": "0x00007ff77cebc4a2",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+3554"
+    },
+    {
+      "pc": "0x00007ff77cfba3ed",
+      "symbol": "uv_loop_fork+83805"
+    },
+    {
+      "pc": "0x00007ff77d3b0f1e",
+      "symbol": "v8::internal::FatalProcessOutOfMemory+798"
+    },
+    {
+      "pc": "0x00007ff77d3b0e57",
+      "symbol": "v8::internal::FatalProcessOutOfMemory+599"
+    },
+    {
+      "pc": "0x00007ff77d460e74",
+      "symbol": "v8::internal::Heap::RootIsImmortalImmovable+14900"
+    },
+    {
+      "pc": "0x00007ff77d456994",
+      "symbol": "v8::internal::Heap::CollectGarbage+7556"
+    },
+    {
+      "pc": "0x00007ff77d455068",
+      "symbol": "v8::internal::Heap::CollectGarbage+1112"
+    },
+    {
+      "pc": "0x00007ff77d45eab7",
+      "symbol": "v8::internal::Heap::RootIsImmortalImmovable+5751"
+    },
+    {
+      "pc": "0x00007ff77d45eb36",
+      "symbol": "v8::internal::Heap::RootIsImmortalImmovable+5878"
+    },
+    {
+      "pc": "0x00007ff77d5e78e1",
+      "symbol": "v8::internal::Factory::NewFillerObject+49"
+    },
+    {
+      "pc": "0x00007ff77d6a0cea",
+      "symbol": "v8::internal::StoreBuffer::StoreBufferOverflow+27082"
+    },
+    {
+      "pc": "0x0000026909150461",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 1510342656,
+    "totalCommittedMemory": 1510342656,
+    "usedMemory": 1471486144,
+    "availableMemory": 23264616,
+    "memoryLimit": 1526909922,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 524288,
+        "committedMemory": 524288,
+        "capacity": 515584,
+        "used": 33520,
+        "available": 482064
+      },
+      "new_space": {
+        "memorySize": 14680064,
+        "committedMemory": 14680064,
+        "capacity": 7218176,
+        "used": 1659424,
+        "available": 5558752
+      },
+      "old_space": {
+        "memorySize": 1311444992,
+        "committedMemory": 1311444992,
+        "capacity": 1289637808,
+        "used": 1288707384,
+        "available": 930424
+      },
+      "code_space": {
+        "memorySize": 1048576,
+        "committedMemory": 1048576,
+        "capacity": 824672,
+        "used": 824672,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 2109440,
+        "committedMemory": 2109440,
+        "capacity": 1069280,
+        "used": 1069280,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 180535296,
+        "committedMemory": 180535296,
+        "capacity": 195485240,
+        "used": 179191864,
+        "available": 16293376
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 0,
+        "used": 0,
+        "available": 0
+      }
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "ACLOCAL_PATH": "C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Programs\\Git\\mingw64\\share\\aclocal;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Programs\\Git\\usr\\share\\aclocal",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\hitvardhan.solanki\\AppData\\Roaming",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "true",
+    "ChocolateyInstall": "C:\\ProgramData\\chocolatey",
+    "ChocolateyLastPathUpdate": "Tue Feb 26 13:09:00 2019",
+    "COMMONPROGRAMFILES": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "IN2319201W6",
+    "COMSPEC": "C:\\Windows\\system32\\cmd.exe",
+    "CONFIG_SITE": "C:/Users/hitvardhan.solanki/AppData/Local/Programs/Git/mingw64/etc/config.site",
+    "DISPLAY": "needs-to-be-defined",
+    "EXEPATH": "C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Programs\\Git\\bin",
+    "FORCE_COLOR": "1",
+    "GOPATH": "C:\\Users\\hitvardhan.solanki\\go",
+    "GOROOT": "C:\\Go\\",
+    "HOME": "C:\\Users\\hitvardhan.solanki",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\hitvardhan.solanki",
+    "HOSTNAME": "IN2319201W6",
+    "INFOPATH": "C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Programs\\Git\\usr\\local\\info;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Programs\\Git\\usr\\share\\info;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Programs\\Git\\usr\\info;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Programs\\Git\\share\\info",
+    "JEST_WORKER_ID": "1",
+    "LANG": "en_US.UTF-8",
+    "LOCALAPPDATA": "C:\\Users\\hitvardhan.solanki\\AppData\\Local",
+    "LOGONSERVER": "\\\\INBANRMPAD02",
+    "MANPATH": "C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Programs\\Git\\mingw64\\local\\man;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Programs\\Git\\mingw64\\share\\man;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Programs\\Git\\usr\\local\\man;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Programs\\Git\\usr\\share\\man;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Programs\\Git\\usr\\man;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Programs\\Git\\share\\man",
+    "MINGW_CHOST": "x86_64-w64-mingw32",
+    "MINGW_PACKAGE_PREFIX": "mingw-w64-x86_64",
+    "MINGW_PREFIX": "C:/Users/hitvardhan.solanki/AppData/Local/Programs/Git/mingw64",
+    "MSYSTEM": "MINGW64",
+    "MSYSTEM_CARCH": "x86_64",
+    "MSYSTEM_CHOST": "x86_64-w64-mingw32",
+    "MSYSTEM_PREFIX": "C:/Users/hitvardhan.solanki/AppData/Local/Programs/Git/mingw64",
+    "NODE_ENV": "test",
+    "NUMBER_OF_PROCESSORS": "8",
+    "OLDPWD": "C:/Users/hitvardhan.solanki/Desktop/Project/Algos",
+    "OneDrive": "C:\\Users\\hitvardhan.solanki\\OneDrive",
+    "ORIGINAL_PATH": "C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Programs\\Git\\mingw64\\bin;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Programs\\Git\\usr\\bin;C:\\Users\\hitvardhan.solanki\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python27;C:\\Python27\\Scripts;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files\\Intel\\WiFi\\bin;C:\\Program Files\\Common Files\\Intel\\WirelessCommon;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\nodejs;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Common Files\\Hitachi ID;C:\\Program Files\\Common Files\\Hitachi ID;C:\\Program Files\\dotnet;C:\\Program Files (x86)\\Microsoft Emulator Manager\\1.0;C:\\Go\\bin;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Programs\\Python\\Python37-32\\Scripts;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Programs\\Python\\Python37-32;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Android\\Sdk\\platform-tools;C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\npm-lifecycle\\node-gyp-bin;C:\\Users\\hitvardhan.solanki\\AppData\\Roaming\\npm\\node_modules\\windows-build-tools\\node_modules\\.bin;C:\\Users\\hitvardhan.solanki\\AppData\\Roaming\\npm\\node_modules\\.bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Python38\\Scripts;C:\\Python38;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files\\Intel\\WiFi\\bin;C:\\Program Files\\Common Files\\Intel\\WirelessCommon;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\nodejs;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Common Files\\Hitachi ID;C:\\Program Files\\Common Files\\Hitachi ID;C:\\Program Files\\dotnet;C:\\Program Files (x86)\\Microsoft Emulator Manager\\1.0;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Programs\\Git\\cmd;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\atom\\bin;C:\\Users\\hitvardhan.solanki\\AppData\\Roaming\\npm;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\GitHubDesktop\\bin;C:\\src\\flutter\\bin;C:\\Users\\hitvardhan.solanki\\Downloads\\redis-2.4.5-win32-win64\\64bit;C:\\Program Files\\flutter\\bin;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Tesseract-OCR;C:\\Users\\hitvardhan.solanki\\go\\bin",
+    "ORIGINAL_TEMP": "C:/Users/HITVAR~1.SOL/AppData/Local/Temp",
+    "ORIGINAL_TMP": "C:/Users/HITVAR~1.SOL/AppData/Local/Temp",
+    "OS": "Windows_NT",
+    "PATH": "C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Programs\\Git\\mingw64\\bin;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Programs\\Git\\usr\\bin;C:\\Users\\hitvardhan.solanki\\bin;C:\\Users\\hitvardhan.solanki\\bin;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Programs\\Git\\mingw64\\bin;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Programs\\Git\\usr\\local\\bin;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Programs\\Git\\usr\\bin;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Programs\\Git\\usr\\bin;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Programs\\Git\\mingw64\\bin;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Programs\\Git\\usr\\bin;C:\\Users\\hitvardhan.solanki\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python27;C:\\Python27\\Scripts;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files\\Intel\\WiFi\\bin;C:\\Program Files\\Common Files\\Intel\\WirelessCommon;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\nodejs;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Common Files\\Hitachi ID;C:\\Program Files\\Common Files\\Hitachi ID;C:\\Program Files\\dotnet;C:\\Program Files (x86)\\Microsoft Emulator Manager\\1.0;C:\\Go\\bin;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Programs\\Python\\Python37-32\\Scripts;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Programs\\Python\\Python37-32;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Android\\Sdk\\platform-tools;C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\npm-lifecycle\\node-gyp-bin;C:\\Users\\hitvardhan.solanki\\AppData\\Roaming\\npm\\node_modules\\windows-build-tools\\node_modules\\.bin;C:\\Users\\hitvardhan.solanki\\AppData\\Roaming\\npm\\node_modules\\.bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Python38\\Scripts;C:\\Python38;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files\\Intel\\WiFi\\bin;C:\\Program Files\\Common Files\\Intel\\WirelessCommon;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\nodejs;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Common Files\\Hitachi ID;C:\\Program Files\\Common Files\\Hitachi ID;C:\\Program Files\\dotnet;C:\\Program Files (x86)\\Microsoft Emulator Manager\\1.0;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Programs\\Git\\cmd;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\atom\\bin;C:\\Users\\hitvardhan.solanki\\AppData\\Roaming\\npm;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\GitHubDesktop\\bin;C:\\src\\flutter\\bin;C:\\Users\\hitvardhan.solanki\\Downloads\\redis-2.4.5-win32-win64\\64bit;C:\\Program Files\\flutter\\bin;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Tesseract-OCR;C:\\Users\\hitvardhan.solanki\\go\\bin;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Programs\\Git\\usr\\bin\\vendor_perl;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Programs\\Git\\usr\\bin\\core_perl",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC",
+    "PKG_CONFIG_PATH": "C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Programs\\Git\\mingw64\\lib\\pkgconfig;C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Programs\\Git\\mingw64\\share\\pkgconfig",
+    "PLINK_PROTOCOL": "ssh",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 158 Stepping 9, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "9e09",
+    "ProgramData": "C:\\ProgramData",
+    "PROGRAMFILES": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "PWD": "C:/Users/hitvardhan.solanki/Desktop/Project/Algos/exercises",
+    "PYTHON3": "C:\\Python38",
+    "SESSIONNAME": "Console",
+    "SHELL": "C:\\Users\\hitvardhan.solanki\\AppData\\Local\\Programs\\Git\\usr\\bin\\bash.exe",
+    "SHLVL": "4",
+    "SSH_ASKPASS": "C:/Users/hitvardhan.solanki/AppData/Local/Programs/Git/mingw64/libexec/git-core/git-gui--askpass",
+    "SYSTEMDRIVE": "C:",
+    "SYSTEMROOT": "C:\\Windows",
+    "TEMP": "C:\\Users\\HITVAR~1.SOL\\AppData\\Local\\Temp",
+    "TERM": "xterm",
+    "TERM_PROGRAM": "vscode",
+    "TERM_PROGRAM_VERSION": "1.34.0",
+    "TMP": "C:\\Users\\HITVAR~1.SOL\\AppData\\Local\\Temp",
+    "TMPDIR": "C:\\Users\\HITVAR~1.SOL\\AppData\\Local\\Temp",
+    "UATDATA": "C:\\Windows\\CCM\\UATData\\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77",
+    "USERDNSDOMAIN": "MEA.EY.NET",
+    "USERDOMAIN": "MEA",
+    "USERDOMAIN_ROAMINGPROFILE": "MEA",
+    "USERNAME": "Hitvardhan.Solanki",
+    "USERPROFILE": "C:\\Users\\hitvardhan.solanki",
+    "WINDIR": "C:\\Windows",
+    "_": "C:/Program Files/nodejs/node"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\Windows\\SYSTEM32\\ntdll.dll",
+    "C:\\Windows\\System32\\KERNEL32.DLL",
+    "C:\\Windows\\System32\\KERNELBASE.dll",
+    "C:\\Windows\\SYSTEM32\\apphelp.dll",
+    "C:\\Windows\\System32\\SYSFER.DLL",
+    "C:\\Windows\\System32\\ADVAPI32.dll",
+    "C:\\Windows\\System32\\msvcrt.dll",
+    "C:\\Windows\\System32\\sechost.dll",
+    "C:\\Windows\\System32\\RPCRT4.dll",
+    "C:\\Windows\\System32\\PSAPI.DLL",
+    "C:\\Windows\\System32\\WS2_32.dll",
+    "C:\\Windows\\System32\\USER32.dll",
+    "C:\\Windows\\System32\\win32u.dll",
+    "C:\\Windows\\System32\\GDI32.dll",
+    "C:\\Windows\\System32\\gdi32full.dll",
+    "C:\\Windows\\SYSTEM32\\dbghelp.dll",
+    "C:\\Windows\\System32\\ucrtbase.dll",
+    "C:\\Windows\\System32\\msvcp_win.dll",
+    "C:\\Windows\\System32\\CRYPT32.dll",
+    "C:\\Windows\\System32\\MSASN1.dll",
+    "C:\\Windows\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\Windows\\SYSTEM32\\USERENV.dll",
+    "C:\\Windows\\SYSTEM32\\bcrypt.dll",
+    "C:\\Windows\\System32\\profapi.dll",
+    "C:\\Windows\\SYSTEM32\\WINMM.dll",
+    "C:\\Windows\\SYSTEM32\\winmmbase.dll",
+    "C:\\Windows\\System32\\cfgmgr32.dll",
+    "C:\\Windows\\System32\\IMM32.DLL",
+    "C:\\Windows\\System32\\combase.dll",
+    "C:\\Windows\\System32\\bcryptPrimitives.dll",
+    "C:\\Program Files\\Avecto\\Privilege Guard Client\\PGHook.dll",
+    "C:\\Windows\\SYSTEM32\\CRYPTSP.dll",
+    "C:\\Windows\\system32\\rsaenh.dll",
+    "C:\\Windows\\SYSTEM32\\CRYPTBASE.dll",
+    "C:\\Windows\\System32\\powrprof.dll",
+    "C:\\Windows\\system32\\mswsock.dll",
+    "C:\\Windows\\System32\\kernel.appcore.dll",
+    "C:\\Windows\\system32\\napinsp.dll",
+    "C:\\Windows\\system32\\pnrpnsp.dll",
+    "C:\\Windows\\system32\\NLAapi.dll",
+    "C:\\Windows\\SYSTEM32\\DNSAPI.dll",
+    "C:\\Windows\\System32\\NSI.dll",
+    "C:\\Windows\\System32\\winrnr.dll",
+    "C:\\Windows\\System32\\wshbth.dll"
+  ]
+}
